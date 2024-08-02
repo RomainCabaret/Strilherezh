@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "361px",
+        sm: "601px",
+        md: "901px",
+        lg: "1101px",
+        xl: "1441px",
+
+        k: "1028px",
+      },
       colors: {
         // strilherezh
         white: "#ffffff",

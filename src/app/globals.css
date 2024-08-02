@@ -13,5 +13,31 @@
 .animate,
 a,
 a:hover {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-card {
+  position: relative;
+}
+
+.category-card .relative {
+  position: relative;
+}
+
+.category-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.category-card:hover .text-container {
+  margin-bottom: 20px;
+}
+
+.category-card:hover .arrow-container {
+  transform: translateX(18px);
+  opacity: 1;
 }

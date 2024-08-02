@@ -20,7 +20,7 @@ export default function RootLayout({
         <title>Strilherezh</title>
       </head>
       <body>
-        <main className="bg-slate-600">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

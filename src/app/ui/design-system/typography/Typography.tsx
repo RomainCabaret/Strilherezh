@@ -2,7 +2,7 @@ import { clsx } from "clsx";
 
 interface Props {
   variant?: "h1" | "h2" | "h3" | "h4" | "p" | "span";
-  color?: "white" | "black" | "gray" | "lightgray";
+  color?: "white" | "black" | "gray" | "lightgray" | "gold";
   font?: "outfit" | "quicksand";
   className?: string;
   children: React.ReactNode;
@@ -20,8 +20,9 @@ export const Typography = ({
       return (
         <h1
           className={clsx(
-            `text-${color} font-${font} font-light text-[80px] tracking-widest`,
-            className
+            `font-${font} font-light text-[80px] tracking-widest`,
+            className,
+            `text-${color}`
           )}
         >
           {children}
@@ -31,8 +32,9 @@ export const Typography = ({
       return (
         <h2
           className={clsx(
-            `text-${color} font-${font} font-light text-[40px] tracking-widest`,
-            className
+            `font-${font} font-light text-[40px] tracking-widest`,
+            className,
+            `text-${color}`
           )}
         >
           {children}
@@ -42,8 +44,9 @@ export const Typography = ({
       return (
         <h3
           className={clsx(
-            `text-${color} font-${font} font-normal text-[30px] tracking-widest`,
-            className
+            `font-${font} font-normal text-[30px] tracking-widest`,
+            className,
+            `text-${color}`
           )}
         >
           {children}
@@ -53,8 +56,9 @@ export const Typography = ({
       return (
         <h4
           className={clsx(
-            `text-${color} font-${font} text-[20px] font-normal tracking-widest`,
-            className
+            `font-${font} text-[20px] font-normal tracking-widest`,
+            className,
+            `text-${color}`
           )}
         >
           {children}
@@ -63,14 +67,18 @@ export const Typography = ({
     case "p":
       return (
         <p
-          className={clsx(`text-${color} font-${font} text-[16px]`, className)}
+          className={clsx(
+            `text-[16px]`,
+            className,
+            `text-${color} font-${font}`
+          )}
         >
           {children}
         </p>
       );
     case "span":
       return (
-        <span className={clsx(`text-${color}`, className)}>{children}</span>
+        <span className={clsx(className, `text-${color}`)}>{children}</span>
       );
     default:
       return null;
