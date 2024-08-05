@@ -9,8 +9,7 @@ import { Footer } from "./ui/components/footer/Footer";
 
 export default function Home() {
   return (
-    <main className="">
-      <Header />
+    <div>
       <HeaderStrilherezh />
 
       {/* --------  */}
@@ -237,6 +236,6 @@ export default function Home() {
         </div>
       </div>
       <Footer/>
-    </main>
+    </div>
   );
 }

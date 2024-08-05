@@ -3,7 +3,7 @@ import { clsx } from "clsx";
 interface Props {
   variant?: "h1" | "h2" | "h3" | "h4" | "p" | "span";
   color?: "white" | "black" | "gray" | "lightgray" | "gold";
-  font?: "outfit" | "quicksand";
+  font?: "outfit" | "quicksand" | "quattrocento";
   className?: string;
   children: React.ReactNode;
 }

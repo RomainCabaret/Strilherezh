@@ -15,7 +15,7 @@ export const Footer = ({}) => {
     "bg-left-bottom bg-gradient-to-r from-gray to-gray bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-300 ease-out";
 
   return (
-    <footer className="w-full">
+    <footer className="w-full border-t-2 border-t-gold">
       <div className="my-[100px] flex justify-center items-center">
         <StrilherezhLogo className="w-[344px] h-[200px] max-sm:w-[205px] max-sm:h-[120px]" />
       </div>

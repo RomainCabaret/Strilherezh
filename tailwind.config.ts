@@ -51,6 +51,7 @@ const config: Config = {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
         quicksand: ["Quicksand", "sans-serif"],
+        quattrocento: ["Quattrocento", "sans-serif"]
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
