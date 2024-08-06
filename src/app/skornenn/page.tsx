@@ -170,7 +170,7 @@ export default function skornennPage() {
               className="text-[16px] mb-[40px] max-sm:text-[14px]"
               color="white"
             >
-              {`À Skornenn, la production du cidre est un véritable art. Les pommes, récoltées à la main, sont pressées selon des méthodes traditionnelles pour en extraire le meilleur jus. La fermentation est réalisée lentement, permettant de développer des arômes riches et complexes. Cette attention portée à chaque étape de la production assure un cidre doux et parfumé, reflet du terroir breton. (textes générés par Chat GPT)`}
+              {`À Skornenn, la production du cidre est un véritable art. Les pommes, récoltées à la main, sont pressées selon des méthodes traditionnelles pour en extraire le meilleur jus. La fermentation est réalisée lentement, permettant de développer des arômes riches et complexes. Cette attention portée à chaque étape de la production assure un cidre doux et parfumé, reflet du terroir breton.`}
             </Typography>
             <Button
               variant="primary"
@@ -229,7 +229,7 @@ export default function skornennPage() {
               className="text-[16px] max-sm:text-[14px] mb-[40px] text-end"
               color="white"
             >
-              {`• Cidre Sans Alcool : Pour ceux qui souhaitent profiter des saveurs du cidre sans les effets de l'alcool, Skornenn propose une version désalcoolisée, tout aussi savoureuse et aromatique. (textes générés par Chat GPT)`}
+              {`• Cidre Sans Alcool : Pour ceux qui souhaitent profiter des saveurs du cidre sans les effets de l'alcool, Skornenn propose une version désalcoolisée, tout aussi savoureuse et aromatique.`}
             </Typography>
             <div className="flex flex-col gap-[20px] items-end">
               <Button

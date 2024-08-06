@@ -5,6 +5,7 @@ import { LinkedInIcon } from "../../design-system/svg/social-network/LinkedInIco
 import { TwitterIcon } from "../../design-system/svg/social-network/TwitterIcon";
 import { StrilherezhLogo } from "../../design-system/svg/StrilherezhLogo";
 import { Typography } from "../../design-system/typography/Typography";
+import Link from "next/link";
 
 export const Footer = ({}) => {
   const titleType = "mb-[20px] text-[20px] font-medium tracking-[1px]";
@@ -30,9 +31,9 @@ export const Footer = ({}) => {
                 "group text-gold transition-all duration-300 ease-in-out"
               )}
             >
-              <a href="#" className={clsx(hoverAnimationGold)}>
+              <Link href="/" className={clsx(hoverAnimationGold)}>
                 Strilherezh
-              </a>
+              </Link>
             </Typography>
 
             <Typography
@@ -71,9 +72,9 @@ export const Footer = ({}) => {
                 "group text-gold transition-all duration-300 ease-in-out"
               )}
             >
-              <a href="#" className={clsx(hoverAnimationGold)}>
+              <Link href="/skornenn" className={clsx(hoverAnimationGold)}>
                 Skornenn
-              </a>
+              </Link>
             </Typography>
 
             <Typography
