@@ -6,6 +6,7 @@ interface Props {
   className?: string;
   skornenn?: boolean;
   icon?: any;
+  onClick?: () => void;
 }
 
 export const Button = ({
@@ -14,6 +15,7 @@ export const Button = ({
   children,
   className,
   icon,
+  onClick,
 }: Props) => {
   let variantStyles: string = "";
 
@@ -42,6 +44,7 @@ export const Button = ({
       <button
         type="button"
         className={clsx(className, variantStyles, "animate font-bold")}
+        onClick={onClick}
       >
         {children}
       </button>

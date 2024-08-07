@@ -342,7 +342,7 @@ const StrilherezhContent = ({ onClose }: DrawerProps) => {
           </li>
           <li>
             <Link
-              href={"/"}
+              href={"/strilherez/produits"}
               className="flex justify-between items-center nav-element w-full"
             >
               <Typography font="outfit" className={clsx(fontStyle)}>

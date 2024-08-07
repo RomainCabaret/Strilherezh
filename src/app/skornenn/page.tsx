@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Carousel from "../ui/components/carrousel/Carrousel";
-import { Footer } from "../ui/components/footer/Footer";
-import { Header } from "../ui/components/header/Header";
 import { HeaderSkornenn } from "../ui/components/header/HeaderSkornenn";
 import { SellCard } from "../ui/components/sellCard/SellCard";
 import { Button } from "../ui/design-system/button/Button";
@@ -302,7 +300,6 @@ export default function skornennPage() {
       </div>
 
       {/* --------  */}
-      <Footer />
     </div>
   );
 }

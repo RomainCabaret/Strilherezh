@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { StrilherezhLogo } from "../../design-system/svg/StrilherezhLogo";
 import { Typography } from "../../design-system/typography/Typography";
+import Link from "next/link";
 
 export const HeaderStrilherezh = ({}) => {
   const typoStyle = "font-extralight";
@@ -16,7 +17,7 @@ export const HeaderStrilherezh = ({}) => {
         />
       </div>
       <div className="flex gap-6 items-center max-sm:gap-3 max-xs:gap-2">
-        <button className="group text-white transition-all duration-300 ease-in-out">
+        <Link href={"/strilherez/produits"} className="group text-white transition-all duration-300 ease-in-out">
           <Typography
             font="outfit"
             color="white"
@@ -24,7 +25,7 @@ export const HeaderStrilherezh = ({}) => {
           >
             Tous nos produits
           </Typography>
-        </button>
+        </Link>
         <button className="group text-white transition-all duration-300 ease-in-out">
           <Typography
             font="outfit"

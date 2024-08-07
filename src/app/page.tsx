@@ -1,11 +1,9 @@
 import Image from "next/image";
 import { CategoryCard } from "./ui/components/category/CategoryCard";
-import { Header } from "./ui/components/header/Header";
 import { HeaderStrilherezh } from "./ui/components/header/HeaderStrilherezh";
 import { SellCard } from "./ui/components/sellCard/SellCard";
 import { Button } from "./ui/design-system/button/Button";
 import { Typography } from "./ui/design-system/typography/Typography";
-import { Footer } from "./ui/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -235,7 +233,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer/>
     </div>
   );
 }

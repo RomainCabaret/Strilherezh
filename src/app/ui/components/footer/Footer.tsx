@@ -56,9 +56,9 @@ export const Footer = ({}) => {
                 "group text-gray transition-all duration-300 ease-in-out"
               )}
             >
-              <a href="#" className={clsx(hoverAnimationGray)}>
+              <Link href="/strilherez/produits" className={clsx(hoverAnimationGray)}>
                 Tous nos produits
-              </a>
+              </Link>
             </Typography>
           </div>
         </div>

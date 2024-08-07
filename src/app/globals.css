@@ -65,6 +65,14 @@ a:hover {
   animation: slideOut 0.3s ease-in forwards;
 }
 
+.reverseSlide-in {
+  animation: reverseSlideIn 0.3s ease-out forwards;
+}
+
+.reverseSlide-out {
+  animation: reverseSlideOut 0.3s ease-in forwards;
+}
+
 .no-scroll {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -93,4 +101,126 @@ a:hover {
     transform: translateX(-100%);
     opacity: 0;
   }
+}
+
+@keyframes reverseSlideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes reverseSlideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.label-radio[type="radio"] {
+  display: none;
+}
+
+.label-radio {
+  font-family: "Outfit";
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  font-weight: 200;
+}
+
+.label-radio:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #fff;
+  margin-top: 7px;
+  font-weight: 200;
+}
+
+/* Style du cercle intérieur du bouton radio quand sélectionné */
+.label-radio:checked + .label-radio:after {
+  font-family: "Outfit";
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #e0aa3e;
+  margin-top: 7px;
+  font-weight: 300;
+}
+
+.accordion-content {
+  height: 0;
+  opacity: 0;
+}
+
+/* Ajoutez ce CSS dans votre fichier global de styles ou dans un fichier CSS importé */
+.custom-checkbox:checked::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 16px;
+  border: solid 2px white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-checkbox {
+  position: relative;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+.custom-checkbox input:checked + span {
+  background-color: #e0aa3e; /* ou toute autre couleur que vous souhaitez pour le fond de la checkbox */
+}
+
+/* CheckboxWithWhiteCheck.css */
+.custom-checkbox:checked + span {
+  background-color: #e0aa3e; /* Couleur de fond lorsque la checkbox est cochée */
+  border-color: #e0aa3e;
+}
+
+.custom-checkbox:checked + span .checkmark {
+  opacity: 1;
+  display: block;
+  stroke: white; /* Couleur du check */
+}
+
+.reload-button {
+  transition: transform 0.5s ease;
+}
+
+.reload-button:hover .icon {
+  transform: rotate(160deg);
+  transition: transform 0.5s ease;
+}
+.reload-button:hover p {
+  opacity: 0.7;
 }
