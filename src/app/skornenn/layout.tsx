@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "../globals.css";
 import Head from "next/head";
+import "../globals.css";
+import { HeaderSkornenn } from "../ui/components/header/HeaderSkornenn";
 
 export const metadata: Metadata = {
   title: "Skornenn",
@@ -13,10 +14,13 @@ export default function skornennLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div>
-    <Head>
+  return (
+    <div>
+      <Head>
         <title>Skornenn</title>
-    </Head>
-    {children}
-    </div>;
+      </Head>
+      <HeaderSkornenn />
+      {children}
+    </div>
+  );
 }

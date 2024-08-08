@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { SellCard } from "./ui/components/card/SellCard";
 import { CategoryCard } from "./ui/components/category/CategoryCard";
 import { HeaderStrilherezh } from "./ui/components/header/HeaderStrilherezh";
-import { SellCard } from "./ui/components/sellCard/SellCard";
 import { Button } from "./ui/design-system/button/Button";
 import { Typography } from "./ui/design-system/typography/Typography";
 

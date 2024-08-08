@@ -1,8 +1,7 @@
 "use client";
 
+import { SellCard } from "@/app/ui/components/card/SellCard";
 import { Filter } from "@/app/ui/components/drawer/Filter";
-import { HeaderStrilherezh } from "@/app/ui/components/header/HeaderStrilherezh";
-import { SellCard } from "@/app/ui/components/sellCard/SellCard";
 import { ArrowIcon } from "@/app/ui/design-system/svg/ArrowIcon";
 import { FilterIcon } from "@/app/ui/design-system/svg/FilterIcon";
 import { Typography } from "@/app/ui/design-system/typography/Typography";
@@ -50,7 +49,6 @@ export default function StrilherezhProduitsPage() {
 
   return (
     <>
-      <HeaderStrilherezh />
       {/* --------  */}
 
       <div className="relative w-full h-[700px] max-xl:h-[600px] max-lg:h-[580px] max-md:h-[500px] max-sm:h-[400px] max-sx:h-[400px]">

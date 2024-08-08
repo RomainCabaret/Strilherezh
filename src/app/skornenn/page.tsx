@@ -1,15 +1,12 @@
 import Image from "next/image";
+import { SellCard } from "../ui/components/card/SellCard";
 import Carousel from "../ui/components/carrousel/Carrousel";
-import { HeaderSkornenn } from "../ui/components/header/HeaderSkornenn";
-import { SellCard } from "../ui/components/sellCard/SellCard";
 import { Button } from "../ui/design-system/button/Button";
 import { Typography } from "../ui/design-system/typography/Typography";
 
 export default function skornennPage() {
   return (
     <div>
-      <HeaderSkornenn />
-
       {/* --------  */}
 
       <div className="relative w-full h-[700px] max-xl:h-[600px] max-lg:h-[580px] max-md:h-[500px] max-sm:h-[400px] max-sx:h-[400px] skornenn-bg">
